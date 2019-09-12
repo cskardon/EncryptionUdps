@@ -20,16 +20,20 @@ that can be copied to the `plugin` directory of your Neo4j instance.
     cp target/procedures-1.0-SNAPSHOT.jar neo4j-enterprise-3.5.8/plugins/.
     
 
-Restart your Neo4j Server. Your new Stored Procedures are available:
+Restart your Neo4j Server. 
 
 Usage:
 
 ```
-//Generate the salt
+//Generate a salt
 RETURN security.generateSalt(128) //16 probs ok
 
 //Create a node, store the IV (Initialization Vector) with it
-CREATE (n:Node {iv: security.getIV(), cryptstring: security.encrypt("plaintext")})
+CREATE (n:Node {id: 1, iv: com.cskardon.getIV(), cryptstring: com.cskardon.encrypt("plaintext")})
+
+//Decrypt that node:
+MATCH (n:Node {id:1})
+RETURN n, com.cskardon.decrypt(n.cryptstring, n.iv) AS decrypted
 ```
 
 ^ Store in config 
