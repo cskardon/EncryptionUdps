@@ -1,0 +1,11 @@
+com\cskardon\TestGraphDatabaseFactory$1.class
+com\cskardon\TestGraphDatabaseFactory$TestGraphDatabaseFacadeFactory.class
+com\cskardon\TestGraphDatabaseFactoryState.class
+com\cskardon\TestGraphDatabaseBuilder.class
+com\cskardon\ImpermanentGraphDatabase$1.class
+com\cskardon\ImpermanentGraphDatabase$ImpermanentPlatformModule.class
+com\cskardon\ImpermanentGraphDatabase.class
+com\cskardon\FunctionsTests.class
+com\cskardon\TestGraphDatabaseFactory$TestGraphDatabaseFacadeFactory$TestDatabasePlatformModule.class
+com\cskardon\TestGraphDatabaseFactory.class
+com\cskardon\TestGraphDatabaseFactory$TestGraphDatabaseFacadeFactory$ImpermanentTestDatabasePlatformModule.class
